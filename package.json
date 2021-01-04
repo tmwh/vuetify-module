@@ -22,7 +22,8 @@
     "build": "tsc",
     "lint": "eslint --ext .ts,.js,.vue .",
     "test": "yarn lint && jest",
-    "release": "yarn test && yarn build && standard-version && git push --follow-tags && npm publish"
+    "release": "yarn test && yarn build && standard-version && git push --follow-tags && npm publish",
+    "prepack": "yarn build"
   },
   "files": [
     "dist",
